@@ -4,7 +4,6 @@
     margin: 0;
     box-sizing: border-box;    
 }
-
 header {
     display: flex;
     align-items: end;
