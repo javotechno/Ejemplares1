@@ -1,9 +1,10 @@
+    
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;    
 }
+
 header {
     display: flex;
     align-items: end;
@@ -57,18 +58,19 @@ footer {
 }
 
 .rocas-animate {
+  
     animation: auto linear reveal both;
     animation-timeline: view();
-    animation-range: exit 99% cover 50%;
-}
-@keyframes reveal {
-    from {
-    opacity: 0;
-    clip-path: inset(0% 60% 0% 50%);
+    animation-range:entry 25% cover 50% ;
+    
+    }@keyframes reveal {
+        from {
+        opacity: 0;
+        clip-path: inset(0% 60% 0% 50%);
+        }
+        to {
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+        }
     }
-    to {
-    opacity: 1;
-    clip-path: inset(0% 0% 0% 0%);
-    }
-}
 
